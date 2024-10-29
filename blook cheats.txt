@@ -1305,7 +1305,7 @@
                     }
                 },
                 {
-                    name: "Always Triple (Broken)",
+                    name: "Always Triple",
                     description: "Always get triple crypto",
                     type: "toggle",
                     enabled: false,
@@ -1313,7 +1313,7 @@
                     run: function () {
                         if (!this.enabled) {
                             this.enabled = true;
-                            this.data = setInterval(state => getStateNode().setState(state), 25, { choices: [{ type: "mult", val: 3, rate: 0.075, blook: "Brainy Bot", text: "Triple Crypto (broken)" }] });
+                            this.data = setInterval(state => getStateNode().setState(state), 25, { choices: [{ type: "mult", val: 3, rate: 0.075, blook: "Brainy Bot", text: "Triple Crypto" }] });
                         } else {
                             this.enabled = false;
                             clearInterval(this.data);
@@ -2058,8 +2058,8 @@
             ],
             gold: [
                 {
-                    name: "Always Triple (Broken)",
-                    description: "Always get triple gold",
+                    name: "Always Triple (Crashes)",
+                    description: "Always get triple gold will crash game though",
                     type: "toggle",
                     enabled: false,
                     data: { type: "multiply", val: 3, text: "Triple Gold!", blook: "Unicorn" },
