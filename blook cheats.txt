@@ -822,7 +822,7 @@
                     }
                 },
                 {
-                    name: "Get Daily Rewards",
+                    name: "Get Daily Rewards (Patched)",
                     description: "Gets max daily tokens and xp",
                     run: async function () {
                         if (!window.location.href.includes("play.blooket.com")) (alert("This cheat only works on play.blooket.com, opening a new tab."), window.open("https://play.blooket.com/"));
